@@ -1,0 +1,59 @@
+.section-contact{
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+    div > h1{
+    text-align: center;
+}
+.box-contact{
+    width: 80%;
+}
+input{
+    width: 100%;
+    height: 40px;
+}
+textarea{
+    width: 100%;
+}
+.form{
+    width: 100%;
+    height: 100%;
+}
+.form h4{
+    margin-bottom: 3px;
+    margin-top: 15px;
+}
+input, textarea{
+    color: white;
+    background-color: transparent;
+    border: 0.01mm white solid;
+    margin-top: 10px;
+    opacity: 40%;
+}
+::placeholder{
+    font-weight: 100;
+    font-style: italic;
+}
+.submit{
+    margin-top: 10%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* 720 HD Television */
+@media (min-width:769px) {
+    .section-contact{
+        width: 100vw;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-contact{
+        max-width: 500px;
+    }  
+}

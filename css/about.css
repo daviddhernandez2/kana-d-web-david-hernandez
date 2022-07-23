@@ -1,0 +1,539 @@
+.scrolldown{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.scrolldown > img{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+h1{
+   opacity: 0;
+   margin: 5% 0% 10% 0%;
+   text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+}
+.marco{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* EXPERIENCE */
+    .experience{
+        opacity: 0;
+        width: 100vw;
+        height: 1160px;
+        /* background-color: tomato; */
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+        /* LEFT */
+        .static-experience{
+            width: 65px;
+            height: 400px;
+            /* background-color: black; */
+            position: sticky;
+            top: 80px;
+         
+            z-index: 300;
+        }
+        .line-experience{
+            height: 100%;
+            width: 1px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 20%;
+        }
+        .circle-experience{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--color-fondo);
+            border: 1px white solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .circleExperience2{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px white solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+         /* RIGHT */
+         .info-experience{
+             width: 500px;
+             height: 100%;
+             /* background-color: turquoise; */
+             position: relative;
+         }
+         .contain-info{
+             width: 90%;
+             height: 100%;
+             margin-top: 180px;
+         }
+         .contain-info > article{
+             margin-bottom: 40px;
+             margin-left: 20px;
+         }
+         .contain-info > h3{
+             margin-bottom: 40px;
+             font-size: 25px;
+             margin-left: 10px;
+             font-weight: 300;
+             text-transform: uppercase;
+         }
+       
+/* WORKFLOW */
+.myworkflow{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.myworkflow h1{
+    padding: 0px 40px 0px 40px;
+}
+.myworkflow img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.workflow{
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-workflow{
+    width: 220px;
+    height: 220px;
+    padding: 30px 30px 30px 30px;
+    margin: 5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.000) 100%);
+    border-radius: 20%;
+    opacity: 60%;
+    transition: 0.3s;
+
+}
+.box-workflow h3{
+    display: flex;
+    padding-left: 15px;
+}
+.box-workflow p{
+    display: flex;
+    font-style: italic;
+    line-height: 1.2;
+    text-align:justify;
+	text-justify:inter-character;
+}
+.title-workflow{
+    display: flex;
+    padding: 30px 0px 10px 0px;
+}
+.box-workflow:hover{
+    opacity: 100%;
+    box-shadow: 0px 0px 140px rgba(255,255,255, 0.1);
+    width: 220px;
+    height: 220px;
+}
+/* APTITUDES */
+.aptitudes{
+    opacity: 0;
+}
+.aptitudes h1{
+    margin-bottom: 30px;
+    opacity: 0;
+}
+.box{
+ /*flex*/
+ display: flex;
+ padding-bottom: 40px;
+}
+.box img{
+    width: 45px;
+    height: 45px;
+}
+.titleInfo{
+    padding-left: 20px;
+}
+.titleInfo h4{
+    padding-bottom: 10px;
+}
+.info-s8{
+    width: 200px;
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* line */
+.line{
+    position: relative;
+}
+.line90,.line80,.line70,.line60,.line50,.line40{
+    width: 0px;
+    color: white;
+    opacity: 80%;
+    position: absolute;
+    bottom: 50%;
+    top: 3.7px;
+    left: 1.9%;
+    right: 50%;
+    border: 2.5px solid;
+    border-radius:22px;
+    z-index: 2;
+}
+.line90{
+    animation: anim90 3s linear forwards;
+}
+.line80{
+    animation: anim80 2.8s linear forwards;
+}
+.line70{
+    animation: anim70 2.7s linear forwards;
+}
+.line60{
+    animation: anim60 2.6s linear forwards;
+}
+.line50{
+    animation: anim50 2.5s linear forwards;
+}
+.line40{
+    animation: anim40 2.4s linear forwards;
+}
+@keyframes anim90{
+    100% {
+        width: 170px;
+    }
+}
+@keyframes anim80{
+    100% {
+        width: 150px;
+    }
+}
+@keyframes anim70{
+    100% {
+        width: 130px;
+    }
+}
+@keyframes anim60{
+    100% {
+        width: 110px;
+    }
+}
+@keyframes anim50{
+    100% {
+        width: 90px;
+    }
+}
+@keyframes anim40{
+    100% {
+        width: 70px;
+    }
+}
+.lineOut{
+    width: 200px;
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    left: 0%;
+    right: 50%;
+    border: 7px solid white;
+    opacity: 20%;
+    border-radius:22px;
+    z-index: 1;
+}
+/* LANGUAGES */
+.languajes{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.languajes h3{
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.skill{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.outer{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    border: 13px solid white;
+    border-radius: 50%;
+    opacity: 20%;
+}
+.inner{
+    position: absolute;
+    background-color: transparent;
+    width: 92px;
+    height: 92px;
+    stroke: white;
+    stroke-width: 6px;
+    stroke-dasharray: 0;
+    opacity: 80%;
+    fill: none;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+}
+.spanish{
+    animation: spanish 4s linear forwards;
+}
+.english{
+    animation: english 3s linear forwards;
+}
+.french{
+    animation: french 2s linear forwards;
+}
+@keyframes spanish{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
+@keyframes english{
+    100%{
+        stroke-dashoffset: 255;
+    }
+}
+@keyframes french{
+    100%{
+        stroke-dashoffset: 385;
+    }
+}
+/* INTEREST */
+.interest{
+    opacity: 0;
+    height: 400px;
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 100px 0px;
+}
+.interest > div{
+    width: 100px;
+    height: 80px;
+    opacity: 60%;
+    background: none;
+}
+.interest img{
+    width: 40px;
+    height: 40px;
+   
+}
+.music, .economy, .travel, .tech, .sports, .read, .design, .ecologism{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+/* BUTTONS */
+.buttons{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--padding-section-mob);
+}
+.buttons button{
+    margin-top: 10px;
+}
+
+
+/* Responsive */
+/* 720 HD Television */
+@media (min-width:769px) {
+
+    h1{
+        margin: 100px 0px 80px 10%;
+        text-align: start;
+    }
+    /* SCROLLDOWN */
+    .scrolldown{
+        height: 100px;
+    }
+    /* EXPERIENCE */
+    .experience{
+        height: 1238px;
+    }
+       /* LEFT */
+       .static-experience{
+        width: 20px;
+        height: 600px;
+        }
+        .contain-info{
+            margin-top: 280px;
+            height: 800px;
+        }
+    
+
+ 
+    /* MY WORKFLOW */
+    .myworkflow{
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        max-width: 950px;
+        margin: 25px 0px 25px 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .work-flow{
+        margin: 10px;
+    }
+    /* APTITUDES */
+    .static-line{
+        left: 200px;
+    }
+    .circle{
+        left: 5px;
+    }
+    .line-1{
+        position: absolute;
+        border-left: 0.5px solid white;
+        height: 80%;
+        top: 30%;
+        left: 6px;
+    }
+    .aptitudes{
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        max-width: 950px;
+        flex-wrap: wrap;
+    }
+    .aptitudes h1{
+        display: none;
+    }
+    .box{
+        width: 475px;
+        padding-left: 28px;
+    }
+    .titleInfo{
+        width: 100%;
+    }
+    .info-s8{
+        width: 100%;
+    }
+    .lineOut{
+        width: 100%;
+    }
+    .line90,.line80,.line70,.line60,.line50,.line40{
+        top: 4px;
+        left: 1.3%;
+    }
+    @keyframes anim90{
+        100% {
+            width: 340px;
+        }
+    }
+    @keyframes anim80{
+        100% {
+            width: 300px;
+        }
+    }
+    @keyframes anim70{
+        100% {
+            width: 260px;
+        }
+    }
+    @keyframes anim60{
+        100% {
+            width: 220px;
+        }
+    }
+    @keyframes anim50{
+        100% {
+            width: 180px;
+        }
+    }
+    @keyframes anim40{
+        100% {
+            width: 140px;
+        }
+    }
+    /* LANGUAJES */
+    .languajes{
+        width: 80%;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 950px;
+        margin-bottom: 30px;
+        
+    }
+    .languajes h3{
+        margin: 0px;
+    }
+    /* INTEREST */
+    .interest{
+        height: 400px;
+        align-items: flex-start;
+    }
+    .interest h3{
+        color: var(--color-fondo);
+    }
+    .interest > div:hover {
+        opacity: 100%;
+    }
+    .interest > div:hover h3 {
+       color: white;
+       font-weight: 100;
+    }
+    .music, .economy, .travel, .tech, .sports, .read, .design, .ecologism{
+        margin-top: 0px;
+    }
+    /* BUTTONS */
+    .buttons{
+        height: 300px;
+        flex-direction: row;
+    }
+    .buttons button{
+        margin: 10px;
+    }
+}    
